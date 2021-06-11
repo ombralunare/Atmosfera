@@ -3,9 +3,9 @@ Lettore musicale
 
 It's just a Music Player. However; it shall be the bestest Music Player you've ever had!
 
-#why? 
+# why? 
 ...
-##well, why the hell not? :)
+## well, why the hell not? :)
 
 - A spin-off of Soundflow, Atmosfera presents with a sleek, simple interface and is highly user-friendly:
 
