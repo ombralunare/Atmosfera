@@ -1,0 +1,41 @@
+body
+
+{
+    background-image: ;
+
+}
+
+.header
+{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title
+{
+    margin: 0;
+    line-height: 32px;
+    font-size: 16px;
+    color: ;
+}
+
+.button
+{
+    width: 32px;
+    height: 32px;
+    background: ;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 6px 6px rgba(0,0,0,0.5),
+                -6px -6px -6px rgba(255,255,255,0.6),
+                inset 2px 2px 5px rgba(0,0,0,0.03),
+                inset -2px -2px 5px rgba(255,255,255,0.4);
+}
+
+.button:active
+{
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.5)
+}
