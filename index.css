@@ -1,7 +1,7 @@
 body
 
 {
-    background-image: ;
+    background-image: //tba
 
 }
 
@@ -24,7 +24,7 @@ body
 {
     width: 32px;
     height: 32px;
-    background: ;
+    background: ;  
     padding: 8px;
     cursor: pointer;
     border-radius: 8px;
@@ -43,9 +43,20 @@ body
 {
     box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
 
+}
 
+.button.inactive
+
+{
 
 }
 
+.button:hover 
+{
+#play:hover{background-color:#209bc7}
+#pause:hover{background-color:#205ac4}
+#back:hover{background-color:#r4400}
+#forward:hover{baclground-color:#9a9f1d}
 
-.button:hover */
+}
+*/
