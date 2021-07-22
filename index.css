@@ -1,8 +1,8 @@
-body
+.body
 
 {
-    background-image: ;
-
+    background-image: url(artwork/bg01.jpg);
+    background-size: cover;
 }
 
 .header
@@ -19,6 +19,33 @@ body
     font-size: 16px;
     color: black;
 }
+
+.form
+ {
+    width: 40px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.input
+{
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+}
+
+.search
+{
+        width: 75%;
+}
+
+.submit
+{
+    width: 70px;
+    background-color: #1c87c9;
+    color: #ffffff;
+}
+
 
 .button
 {
