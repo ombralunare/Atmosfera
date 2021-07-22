@@ -1,8 +1,8 @@
-body
+.body
 
 {
-    background-image: //tba
-
+    background-image: url(artwork/bg01.jpg);
+    background-size: cover;
 }
 
 .header
@@ -20,11 +20,38 @@ body
     color: black;
 }
 
+.form
+ {
+    width: 40px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.input
+{
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+}
+
+.search
+{
+        width: 75%;
+}
+
+.submit
+{
+    width: 70px;
+    background-color: #1c87c9;
+    color: #ffffff;
+}
+
+
 .button
 {
     width: 32px;
     height: 32px;
-    background: ;  
+    background: ;
     padding: 8px;
     cursor: pointer;
     border-radius: 8px;
@@ -43,20 +70,9 @@ body
 {
     box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
 
-}
 
-.button.inactive
-
-{
 
 }
 
-.button:hover 
-{
-#play:hover{background-color:#209bc7}
-#pause:hover{background-color:#205ac4}
-#back:hover{background-color:#r4400}
-#forward:hover{background-color:#9a9f1d}
 
-}
-*/
+.button:hover */
