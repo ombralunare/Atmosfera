@@ -25,9 +25,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.64560533"
-     inkscape:cx="597.11403"
-     inkscape:cy="331.47186"
+     inkscape:zoom="0.45994469"
+     inkscape:cx="609.85593"
+     inkscape:cy="284.81685"
      inkscape:window-width="1366"
      inkscape:window-height="694"
      inkscape:window-x="0"
@@ -85,9 +85,93 @@
     <rect
        style="fill:#393939;fill-opacity:0.651027;stroke:#ffffff;stroke-width:0.3;stroke-opacity:1"
        id="rect1901"
-       width="874.21979"
-       height="67.344551"
-       x="325.78024"
-       y="607.65546" />
+       width="548.22534"
+       height="67.253662"
+       x="651.7749"
+       y="607.74634" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="668.73993"
+       y="354.00406"
+       id="text1974"><tspan
+         sodipodi:role="line"
+         id="tspan1972"
+         x="668.73993"
+         y="354.00406"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">play-list</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="652.00806"
+       y="46.631927"
+       id="text9162"><tspan
+         sodipodi:role="line"
+         id="tspan9160"
+         x="652.00806"
+         y="46.631927"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">play-list-search</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="44.920071"
+       y="40.812885"
+       id="text9268"><tspan
+         sodipodi:role="line"
+         id="tspan9266"
+         x="44.920071"
+         y="40.812885"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">folder-path</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="44.920071"
+       y="162.81288"
+       id="text15956"><tspan
+         sodipodi:role="line"
+         id="tspan15954"
+         x="44.920071"
+         y="162.81288"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">items in folder</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="90.396492"
+       y="648.85669"
+       id="text16062"><tspan
+         sodipodi:role="line"
+         id="tspan16060"
+         x="90.396492"
+         y="648.85669"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">path tools</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="815.78369"
+       y="649.27216"
+       id="text16168"><tspan
+         sodipodi:role="line"
+         id="tspan16166"
+         x="815.78369"
+         y="649.27216"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">seeker</tspan></text>
+    <rect
+       style="fill:#393939;fill-opacity:0.651027;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect18733"
+       width="318.71402"
+       height="67.347839"
+       x="326"
+       y="607.65216" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.6667px;line-height:1.25;font-family:'Riding Monday';-inkscape-font-specification:'Riding Monday'"
+       x="419.78369"
+       y="651.27216"
+       id="text18961"><tspan
+         sodipodi:role="line"
+         id="tspan18959"
+         x="419.78369"
+         y="651.27216"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.6667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff">controls</tspan></text>
   </g>
 </svg>
