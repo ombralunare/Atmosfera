@@ -1,45 +1,64 @@
-.body
-
+*
 {
-    background-image: url(artwork/bg01.jpg);
+    box-sizing: border-box;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+body
+{
+    height: 100%;
+    margin: 0px;
+    background-image: url("./artwork/bg01.jpg");
     background-size: cover;
 }
 
-.header
+
+header
 {
     align-self: stretch;
     display: flex;
     justify-content: space-around;
 }
 
-.title
+title
 {
     margin: 0;
     line-height: 32px;
-    font-size: 16px;
+    font-size: 48px;
     color: black;
 }
 
-.form
+form
  {
     width: 40px;
     margin: auto;
     margin-top: 55px;
 }
 
-.input
+input
 {
     padding: 4px 10px;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.search
+search
 {
         width: 75%;
 }
 
-.submit
+submit
 {
     width: 70px;
     background-color: #1c87c9;
@@ -47,7 +66,7 @@
 }
 
 
-.button
+button
 {
     width: 32px;
     height: 32px;
