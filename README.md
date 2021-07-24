@@ -12,7 +12,7 @@ if you've installed soundflow; you know it can download directly from YouTube an
 
 >°NB° if you haven't seen it yet, check it out in my Repositories!
 
-# To Install Soundflow:
+# How to Install Soundflow:
 
 1. Open: terminal/console ...
 2. type: npm install soundflow
