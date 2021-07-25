@@ -4,19 +4,31 @@
         <link rel="stylesheet" href="./index.css" />
         <link rel="stylesheet" href="./customTags.css" />
         <link rel="stylesheet" href="./decor.css" />
+        <script src="index.js"></script>
     </head>
     <body>
 
     <!-- "grid" tag is defined in `customTags.css` -->
-        <grid id="panlGrid">
+        <grid id="mainGrid">
             <grow>
-                <gcol id="leftPanl">
-                    left panl
+                <gcol id="serverCell">
+                    <grid>
+                        <grow>
+                            <gcol id="folderPathCell">
+                                <input id="folderPath" />
+                            </gcol>
+                        </grow>
+                        <grow>
+                            <gcol>
+                                <panl id="folderItems"></panl>
+                            </gcol>
+                        </grow>
+                    </grid>
                 </gcol>
-                <gcol id="sizeCell" class="dbug">
-                    <div id="sizeHndl"></div>
+                <gcol id="resizeCell" class="dbug">
+                    <div id="sizeHandle"></div>
                 </gcol>
-                <gcol id="rightPanl">
+                <gcol id="clientCell">
                     right panl
                 </gcol>
             </grow>

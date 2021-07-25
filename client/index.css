@@ -36,7 +36,7 @@ table
 
 
 
-#panlGrid
+#mainGrid
 {
     width: 100%;
     height: 100%;
@@ -44,7 +44,7 @@ table
 
 
 
-#leftPanl
+#serverCell
 {
     width: 30%;
     height: 100%;
@@ -52,12 +52,12 @@ table
 
 
 
-#sizeCell
+#resizeCell
 {
     width: 3px;
 }
 
-#sizeCell > div
+#resizeCell > div
 {
     width: 3px;
     height: 100%;
@@ -65,7 +65,7 @@ table
 
 
 
-#rightPanl
+#clientCell
 {
     width: auto;
 }
