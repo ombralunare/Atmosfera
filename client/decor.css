@@ -6,3 +6,9 @@ body
     background-image: url("./artwork/bg01.jpg");
     background-size: cover;
 }
+
+
+#folderPathCell
+{
+    height: 1rem;
+}

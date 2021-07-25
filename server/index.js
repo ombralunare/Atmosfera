@@ -5,7 +5,7 @@
     const http = require("http");
     const disc = require("fs");
     const mule = require("child_process");
-
+    const info = require("os").userInfo();
 // ----------------------------------------------------------------------------
 
 
@@ -20,7 +20,7 @@
         {
             addr: "0.0.0.0",
             port: 2750,
-            mlib: "~/Music",
+            mlib: ("/home/" + info.username + "/Music"),
             mime:
             {
                 "3gp" : "video/3gpp",
@@ -115,7 +115,11 @@
 
         select(url, rsp)
         {
-            if (url == "/"){ url = "/index.html" };
+            if (url == "/"){ url = "/index.html" }
+            else if (url.startsWith("/~/"))
+            {
+                url = ("/home/" + info.username + url.slice(2));
+            };
 
             let ext = url.split(".").pop();
             let mlp = this.config.mlib;
@@ -126,6 +130,7 @@
 
             if (!disc.existsSync(pth))
             {
+                console.log("NO EXIST!");
                 rsp.statusCode = 404; rsp.end(); return;
             };
 
@@ -134,7 +139,7 @@
 
             if (dir)
             {
-                let dir = disc.readdir(pth);
+                let dir = disc.readdirSync(pth);
                 let txt = JSON.stringify(dir);
 
                 rsp.setHeader("Content-type", "application/json");
