@@ -2,20 +2,25 @@
 <html>
     <head>
         <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="./customTags.css" />
+        <link rel="stylesheet" href="./decor.css" />
     </head>
     <body>
-        <table id="panlGrid">
-            <tr>
-                <td id="leftPanl">
+
+    <!-- "grid" tag is defined in `customTags.css` -->
+        <grid id="panlGrid">
+            <grow>
+                <gcol id="leftPanl">
                     left panl
-                </td>
-                <td id="sizeCell" class="dbug">
+                </gcol>
+                <gcol id="sizeCell" class="dbug">
                     <div id="sizeHndl"></div>
-                </td>
-                <td id="rightPanl">
+                </gcol>
+                <gcol id="rightPanl">
                     right panl
-                </td>
-            </tr>
-        </table>
+                </gcol>
+            </grow>
+        </grid>
+
     </body>
 </html>
