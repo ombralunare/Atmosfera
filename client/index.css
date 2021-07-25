@@ -1,7 +1,30 @@
+
 *
 {
     box-sizing: border-box;
 }
+
+
+html,body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2vw;
+}
+
+
+@media all and (max-width: 1200px)
+{ body{font-size:12px};	}
+
+
+.dbug
+{
+    background-color: #BADA55;
+    color: #A00;
+}
+
+
 
 table
 {
@@ -10,88 +33,56 @@ table
 
 
 
-
-
+layr
+{
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height:100%;
+}
 
 
 
 body
 {
-    height: 100%;
-    margin: 0px;
     background-image: url("./artwork/bg01.jpg");
     background-size: cover;
 }
 
 
-header
+
+
+#panlGrid
 {
-    align-self: stretch;
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
-title
+
+
+#leftPanl
 {
-    margin: 0;
-    line-height: 32px;
-    font-size: 48px;
-    color: black;
+    width: 30%;
+    height: 100%;
 }
 
-form
- {
-    width: 40px;
-    margin: auto;
-    margin-top: 55px;
-}
 
-input
+
+#sizeCell
 {
-    padding: 4px 10px;
-    border: 0;
-    font-size: 18px;
+    width: 3px;
 }
 
-search
+#sizeCell > div
 {
-        width: 75%;
+    width: 3px;
+    height: 100%;
 }
 
-submit
+
+
+#rightPanl
 {
-    width: 70px;
-    background-color: #1c87c9;
-    color: #ffffff;
+    width: auto;
 }
-
-
-button
-{
-    width: 32px;
-    height: 32px;
-    background: ;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 6px 6px rgba(0,0,0,0.5),
-                -6px -6px -6px rgba(255,255,255,0.6),
-                inset 2px 2px 5px rgba(0,0,0,0.03),
-                inset -2px -2px 5px rgba(255,255,255,0.4);
-}
-
-
-
-
-
-/* .button:active
-{
-    box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
-
-
-
-}
-
-
-.button:hover */
