@@ -3,7 +3,7 @@
 
 /* layr :: layers
 /* ------------------------------------------------------------------------- */
-    layr
+    layr                                           /*for the GUI*/ 
     {
         display: block;
         position: absolute;

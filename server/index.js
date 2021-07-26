@@ -1,26 +1,59 @@
 
 
-// load :: required : libraries
+// load :: http : module .. for low-level stream-handling over http protocol
 // ----------------------------------------------------------------------------
     const http = require("http");
-    const disc = require("fs");
+// ----------------------------------------------------------------------------
+
+
+
+// load :: disk : module .. for interacting with the File Systems (POSI)
+// ----------------------------------------------------------------------------
+    const disk = require("fs");
+// ----------------------------------------------------------------------------
+
+
+
+//load :: mule : module for spawning child/sub -processes e.g. BASH
+// ----------------------------------------------------------------------------
     const mule = require("child_process");
+// ----------------------------------------------------------------------------
+
+
+
+// load :: info : object that contains info about user running current script
+// ----------------------------------------------------------------------------
     const info = require("os").userInfo();
 // ----------------------------------------------------------------------------
 
 
 
 
-// tool :: Server : web-server
+// class :: Server : web-server
 // ----------------------------------------------------------------------------
     class Server
     {
+    // object :: memory : keeps record of values contained in the Server instance
+    // ------------------------------------------------------------------------
         memory = {}
+    // ------------------------------------------------------------------------
+
+
+
+    // object :: config : holds default configuration that may change...
+    // ------------------------------------------------------------------------
         config =
         {
-            addr: "0.0.0.0",
-            port: 2750,
-            mlib: ("/home/" + info.username + "/Music"),
+        // misc
+        // --------------------------------------------------------------------
+            addr: "0.0.0.0",    // address to listen on
+            port: 2750,         // port to listen on
+            mlib: ("/home/" + info.username + "/Music"), // music library path
+        // --------------------------------------------------------------------
+
+
+        // mime :: multipurpose internet mail extension used to identify data
+        // --------------------------------------------------------------------
             mime:
             {
                 "3gp" : "video/3gpp",
@@ -90,67 +123,74 @@
                   zip : "application/zip",
                 webmanifest : "application/json",
             },
+        // --------------------------------------------------------------------
         }
+    // ------------------------------------------------------------------------
 
 
 
+    // method :: constructor : initiates Server object
+    // ------------------------------------------------------------------------
         constructor()
         {
-            var myself = this;
-            myself.driver = http.createServer(function handler(req, rsp)
+            var myself = this;  // reference to current instance
+            var handle = function handle(req, rsp)  // request handler
             {
-                if (req.method == "GET")
+                if (req.method == "GET")    // retrieves http request url
                 {
-                    myself.select(req.url, rsp);
+                    myself.select(req.url, rsp);    // response is 'info'
                     return;
                 };
-
-                // TO-DO :: POST : upload songs/files
-            });
-
-            myself.driver.listen(myself.config.port, myself.config.addr);
-        }
-
-
-
-        select(url, rsp)
-        {
-            if (url == "/"){ url = "/index.html" }
-            else if (url.startsWith("/~/"))
-            {
-                url = ("/home/" + info.username + url.slice(2));
             };
 
-            let ext = url.split(".").pop();
-            let mlp = this.config.mlib;
-            let pub = ((__dirname).split("/server")[0] + "/client");
-            let pth = (url.startsWith(mlp) ? url : (pub+url));
+            myself.driver = http.createServer(handle);  // server instance
+            myself.driver.listen(myself.config.port, myself.config.addr);
+        }
+    // ------------------------------------------------------------------------
+
+
+
+    // method :: select : serves file(s) requested by http using GET method
+    // ------------------------------------------------------------------------
+        select(url, rsp)
+        {
+            if (url == "/"){url = "/index.html"}
+            else if (url.startsWith("/~/"))
+            {
+                url = ("/home/" + info.username + url.slice(2));  //
+            };
+
+            let ext = url.split(".").pop(); //
+            let mlp = this.config.mlib; // reference to music library path
+            let pub = ((__dirname).split("/server")[0] + "/client");    //
+            let pth = (url.startsWith(mlp) ? url : (pub+url));  // specify path
 
             // console.log(pth);    // for debugging
 
-            if (!disc.existsSync(pth))
+            if (!disk.existsSync(pth))
             {
-                console.log("NO EXIST!");
+                console.log("NO EXIST!");   // throws console.error();
                 rsp.statusCode = 404; rsp.end(); return;
             };
 
             rsp.statusCode = 200;
-            let dir = disc.statSync(pth).isDirectory();
+            let dir = disk.statSync(pth).isDirectory();
 
             if (dir)
             {
-                let dir = disc.readdirSync(pth);
+                let dir = disk.readdirSync(pth);
                 let txt = JSON.stringify(dir);
 
-                rsp.setHeader("Content-type", "application/json");
+                rsp.setHeader("Content-type", "application/json");  // mimetype
                 rsp.end(txt); return;
             };
 
 
             let mimetype = this.config.mime[ext];
             rsp.setHeader("Content-type", mimetype);
-            rsp.end( disc.readFileSync(pth) );
+            rsp.end(disk.readFileSync(pth));
         }
+    // ------------------------------------------------------------------------
     }
 // ----------------------------------------------------------------------------
 
@@ -159,5 +199,5 @@
 
 // init :: Server : now
 // ----------------------------------------------------------------------------
-    let host = new Server();
+    let host = new Server();    // voila! A Server
 // ----------------------------------------------------------------------------
